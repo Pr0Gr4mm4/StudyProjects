@@ -18,7 +18,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE OverviewOrderItemDetails(
+ALTER PROCEDURE OverviewOrderItemDetails(
 @OrderID INT,
 @OrderItemID INT
 )
