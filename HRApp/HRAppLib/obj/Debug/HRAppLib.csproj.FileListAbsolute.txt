@@ -1,0 +1,5 @@
+C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRAppLib\bin\Debug\HRAppLib.dll.config
+C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRAppLib\bin\Debug\HRAppLib.dll
+C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRAppLib\bin\Debug\HRAppLib.pdb
+C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRAppLib\obj\Debug\HRAppLib.dll
+C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRAppLib\obj\Debug\HRAppLib.pdb

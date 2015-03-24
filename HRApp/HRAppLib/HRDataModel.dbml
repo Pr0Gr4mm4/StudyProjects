@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HR" Class="HRDataModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=www.dbss.nl;Initial Catalog=HR;Persist Security Info=True;User ID=IAO4" SettingsObjectName="HRAppLib.Properties.Settings" SettingsPropertyName="HRConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DEPARTMENTS" Member="DEPARTMENTs">
+    <Type Name="DEPARTMENT">
+      <Column Name="DEPARTMENT_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEPARTMENT_NAME" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MANAGER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOCATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DEPARTMENT_EMPLOYEE" Member="EMPLOYEEs" ThisKey="DEPARTMENT_ID" OtherKey="DEPARTMENT_ID" Type="EMPLOYEE" />
+      <Association Name="LOCATION_DEPARTMENT" Member="LOCATION" ThisKey="LOCATION_ID" OtherKey="LOCATION_ID" Type="LOCATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EMPLOYEES" Member="EMPLOYEEs">
+    <Type Name="EMPLOYEE">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FIRST_NAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LAST_NAME" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="PHONE_NUMBER" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HIRE_DATE" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="JOB_ID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SALARY" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="COMMISSION_PCT" Type="System.Decimal" DbType="Decimal(2,2)" CanBeNull="true" />
+      <Column Name="MANAGER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEPARTMENT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ISMANAGER" Type="System.Char" DbType="Char(1)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="EMPLOYEE_EMPLOYEE" Member="EMPLOYEEs" ThisKey="EMPLOYEE_ID" OtherKey="MANAGER_ID" Type="EMPLOYEE" />
+      <Association Name="DEPARTMENT_EMPLOYEE" Member="DEPARTMENT" ThisKey="DEPARTMENT_ID" OtherKey="DEPARTMENT_ID" Type="DEPARTMENT" IsForeignKey="true" />
+      <Association Name="EMPLOYEE_EMPLOYEE" Member="EMPLOYEE1" ThisKey="MANAGER_ID" OtherKey="EMPLOYEE_ID" Type="EMPLOYEE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOCATIONS" Member="LOCATIONs">
+    <Type Name="LOCATION">
+      <Column Name="LOCATION_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STREET_ADDRESS" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="POSTAL_CODE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="STATE_PROVINCE" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="COUNTRY_ID" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Association Name="LOCATION_DEPARTMENT" Member="DEPARTMENTs" ThisKey="LOCATION_ID" OtherKey="LOCATION_ID" Type="DEPARTMENT" />
+    </Type>
+  </Table>
+</Database>
