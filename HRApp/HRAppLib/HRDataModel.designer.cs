@@ -42,7 +42,7 @@ namespace HRAppLib
     #endregion
 		
 		public HRDataModelDataContext() : 
-				base(global::HRAppLib.Properties.Settings.Default.HRConnectionString, mappingSource)
+				base(global::HRAppLib.Properties.Settings.Default.HRConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -93,6 +93,20 @@ namespace HRAppLib
 			{
 				return this.GetTable<LOCATION>();
 			}
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.getDepartments")]
+		public ISingleResult<getDepartmentsResult> getDepartments()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<getDepartmentsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.getDepartmentEmployees")]
+		public ISingleResult<getDepartmentEmployeesResult> getDepartmentEmployees([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DepartmentID", DbType="Int")] System.Nullable<int> departmentID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), departmentID);
+			return ((ISingleResult<getDepartmentEmployeesResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -327,8 +341,6 @@ namespace HRAppLib
 		
 		private System.Nullable<int> _DEPARTMENT_ID;
 		
-		private System.Nullable<char> _ISMANAGER;
-		
 		private string _PASSWORD;
 		
 		private EntitySet<EMPLOYEE> _EMPLOYEEs;
@@ -363,8 +375,6 @@ namespace HRAppLib
     partial void OnMANAGER_IDChanged();
     partial void OnDEPARTMENT_IDChanging(System.Nullable<int> value);
     partial void OnDEPARTMENT_IDChanged();
-    partial void OnISMANAGERChanging(System.Nullable<char> value);
-    partial void OnISMANAGERChanged();
     partial void OnPASSWORDChanging(string value);
     partial void OnPASSWORDChanged();
     #endregion
@@ -601,26 +611,6 @@ namespace HRAppLib
 					this._DEPARTMENT_ID = value;
 					this.SendPropertyChanged("DEPARTMENT_ID");
 					this.OnDEPARTMENT_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISMANAGER", AutoSync=AutoSync.Always, DbType="Char(1)", IsDbGenerated=true, UpdateCheck=UpdateCheck.Never)]
-		public System.Nullable<char> ISMANAGER
-		{
-			get
-			{
-				return this._ISMANAGER;
-			}
-			set
-			{
-				if ((this._ISMANAGER != value))
-				{
-					this.OnISMANAGERChanging(value);
-					this.SendPropertyChanging();
-					this._ISMANAGER = value;
-					this.SendPropertyChanged("ISMANAGER");
-					this.OnISMANAGERChanged();
 				}
 			}
 		}
@@ -966,6 +956,328 @@ namespace HRAppLib
 		{
 			this.SendPropertyChanging();
 			entity.LOCATION = null;
+		}
+	}
+	
+	public partial class getDepartmentsResult
+	{
+		
+		private int _Department_ID;
+		
+		private string _Department;
+		
+		private string _Manager;
+		
+		private string _City;
+		
+		private string _Country;
+		
+		public getDepartmentsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Department ID]", Storage="_Department_ID", DbType="Int NOT NULL")]
+		public int Department_ID
+		{
+			get
+			{
+				return this._Department_ID;
+			}
+			set
+			{
+				if ((this._Department_ID != value))
+				{
+					this._Department_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Department", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string Department
+		{
+			get
+			{
+				return this._Department;
+			}
+			set
+			{
+				if ((this._Department != value))
+				{
+					this._Department = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Manager", DbType="VarChar(46)")]
+		public string Manager
+		{
+			get
+			{
+				return this._Manager;
+			}
+			set
+			{
+				if ((this._Manager != value))
+				{
+					this._Manager = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_City", DbType="VarChar(30)")]
+		public string City
+		{
+			get
+			{
+				return this._City;
+			}
+			set
+			{
+				if ((this._City != value))
+				{
+					this._City = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Country", DbType="VarChar(40)")]
+		public string Country
+		{
+			get
+			{
+				return this._Country;
+			}
+			set
+			{
+				if ((this._Country != value))
+				{
+					this._Country = value;
+				}
+			}
+		}
+	}
+	
+	public partial class getDepartmentEmployeesResult
+	{
+		
+		private int _EMPLOYEE_ID;
+		
+		private string _FIRST_NAME;
+		
+		private string _LAST_NAME;
+		
+		private string _EMAIL;
+		
+		private string _PHONE_NUMBER;
+		
+		private System.DateTime _HIRE_DATE;
+		
+		private string _JOB_ID;
+		
+		private System.Nullable<decimal> _SALARY;
+		
+		private System.Nullable<decimal> _COMMISSION_PCT;
+		
+		private System.Nullable<int> _MANAGER_ID;
+		
+		private System.Nullable<int> _DEPARTMENT_ID;
+		
+		private string _PASSWORD;
+		
+		public getDepartmentEmployeesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMPLOYEE_ID", DbType="Int NOT NULL")]
+		public int EMPLOYEE_ID
+		{
+			get
+			{
+				return this._EMPLOYEE_ID;
+			}
+			set
+			{
+				if ((this._EMPLOYEE_ID != value))
+				{
+					this._EMPLOYEE_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FIRST_NAME", DbType="VarChar(20)")]
+		public string FIRST_NAME
+		{
+			get
+			{
+				return this._FIRST_NAME;
+			}
+			set
+			{
+				if ((this._FIRST_NAME != value))
+				{
+					this._FIRST_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LAST_NAME", DbType="VarChar(25) NOT NULL", CanBeNull=false)]
+		public string LAST_NAME
+		{
+			get
+			{
+				return this._LAST_NAME;
+			}
+			set
+			{
+				if ((this._LAST_NAME != value))
+				{
+					this._LAST_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="VarChar(25) NOT NULL", CanBeNull=false)]
+		public string EMAIL
+		{
+			get
+			{
+				return this._EMAIL;
+			}
+			set
+			{
+				if ((this._EMAIL != value))
+				{
+					this._EMAIL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHONE_NUMBER", DbType="VarChar(20)")]
+		public string PHONE_NUMBER
+		{
+			get
+			{
+				return this._PHONE_NUMBER;
+			}
+			set
+			{
+				if ((this._PHONE_NUMBER != value))
+				{
+					this._PHONE_NUMBER = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HIRE_DATE", DbType="Date NOT NULL")]
+		public System.DateTime HIRE_DATE
+		{
+			get
+			{
+				return this._HIRE_DATE;
+			}
+			set
+			{
+				if ((this._HIRE_DATE != value))
+				{
+					this._HIRE_DATE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_JOB_ID", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string JOB_ID
+		{
+			get
+			{
+				return this._JOB_ID;
+			}
+			set
+			{
+				if ((this._JOB_ID != value))
+				{
+					this._JOB_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SALARY", DbType="Decimal(8,2)")]
+		public System.Nullable<decimal> SALARY
+		{
+			get
+			{
+				return this._SALARY;
+			}
+			set
+			{
+				if ((this._SALARY != value))
+				{
+					this._SALARY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMMISSION_PCT", DbType="Decimal(2,2)")]
+		public System.Nullable<decimal> COMMISSION_PCT
+		{
+			get
+			{
+				return this._COMMISSION_PCT;
+			}
+			set
+			{
+				if ((this._COMMISSION_PCT != value))
+				{
+					this._COMMISSION_PCT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MANAGER_ID", DbType="Int")]
+		public System.Nullable<int> MANAGER_ID
+		{
+			get
+			{
+				return this._MANAGER_ID;
+			}
+			set
+			{
+				if ((this._MANAGER_ID != value))
+				{
+					this._MANAGER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DEPARTMENT_ID", DbType="Int")]
+		public System.Nullable<int> DEPARTMENT_ID
+		{
+			get
+			{
+				return this._DEPARTMENT_ID;
+			}
+			set
+			{
+				if ((this._DEPARTMENT_ID != value))
+				{
+					this._DEPARTMENT_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PASSWORD", DbType="VarChar(1000)")]
+		public string PASSWORD
+		{
+			get
+			{
+				return this._PASSWORD;
+			}
+			set
+			{
+				if ((this._PASSWORD != value))
+				{
+					this._PASSWORD = value;
+				}
+			}
 		}
 	}
 }

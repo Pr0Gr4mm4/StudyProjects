@@ -33,5 +33,15 @@ namespace HRAppLib.Properties {
                 return ((string)(this["HRConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MRSYNTAX\\SYNSERNET;Initial Catalog=HR;Integrated Security=True")]
+        public string HRConnectionString1 {
+            get {
+                return ((string)(this["HRConnectionString1"]));
+            }
+        }
     }
 }

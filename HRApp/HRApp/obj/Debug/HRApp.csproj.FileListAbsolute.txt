@@ -6,3 +6,11 @@ C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRApp\bin\H
 C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRApp\obj\Debug\HRApp.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRApp\obj\Debug\HRApp.dll
 C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\HRApp\HRApp\obj\Debug\HRApp.pdb
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\bin\HRApp.dll.config
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\bin\HRApp.dll
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\bin\HRApp.pdb
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\bin\HRAppLib.dll
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\bin\HRAppLib.pdb
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\obj\Debug\HRApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\obj\Debug\HRApp.dll
+C:\Users\Admin\Desktop\Studie\HRApp\HRApp\obj\Debug\HRApp.pdb

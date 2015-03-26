@@ -68,6 +68,7 @@
     <Content Include="DepartmentLocations.aspx" />
     <Content Include="DepartmentsWithEmployees.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="spDepartments.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +90,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="spDepartments.aspx.cs">
+      <DependentUpon>spDepartments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spDepartments.aspx.designer.cs">
+      <DependentUpon>spDepartments.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

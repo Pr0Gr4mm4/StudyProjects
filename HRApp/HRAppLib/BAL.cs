@@ -105,5 +105,18 @@ namespace HRAppLib
             }
             return null;
         }
+
+        public List<getDepartmentsResult> spGetDepartments()
+        {
+            var depts = dmdContext.getDepartments();
+            return depts.ToList();
+        }
+
+        public List<getDepartmentEmployeesResult> spGetDepartmentEmployees(int deptID)
+        {
+            var emps = dmdContext.getDepartmentEmployees(deptID);
+            return emps.ToList();
+        }
+
     }
 }

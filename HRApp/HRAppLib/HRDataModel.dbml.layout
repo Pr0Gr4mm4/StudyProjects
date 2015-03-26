@@ -8,20 +8,20 @@
         <elementListCompartment Id="948b5d76-748e-4df8-b9a1-17ec12c1fd90" absoluteBounds="2.515, 2.085, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="32b80f29-b3c3-41b8-bf07-f449958c3a36" absoluteBounds="6.375, 1, 2, 2.9039737955729166">
+    <classShape Id="32b80f29-b3c3-41b8-bf07-f449958c3a36" absoluteBounds="6.375, 1, 2, 2.73962646484375">
       <DataClassMoniker Name="/HRDataModelDataContext/EMPLOYEE" />
       <nestedChildShapes>
-        <elementListCompartment Id="6e93848e-edf1-490c-a6eb-861a50a9e6fe" absoluteBounds="6.3900000000000006, 1.46, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6e93848e-edf1-490c-a6eb-861a50a9e6fe" absoluteBounds="6.3900000000000006, 1.46, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.5 : 2.33742390950521); (6.375 : 2.33742390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(4.5 : 2.33742390950521); (6.375 : 2.33742390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/HRDataModelDataContext/DEPARTMENT/DEPARTMENT_EMPLOYEE" />
       <nodes>
         <classShapeMoniker Id="13309e3a-5a15-4794-9b3c-3d81a637a562" />
         <classShapeMoniker Id="32b80f29-b3c3-41b8-bf07-f449958c3a36" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.08423076923077 : 3.90397379557292); (7.08423076923077 : 4.15397379557292); (7.67961538461539 : 4.15397379557292); (7.67961538461539 : 3.90397379557292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(7.08423076923077 : 3.73962646484375); (7.08423076923077 : 3.98962646484375); (7.67961538461539 : 3.98962646484375); (7.67961538461539 : 3.73962646484375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/HRDataModelDataContext/EMPLOYEE/EMPLOYEE_EMPLOYEE" />
       <nodes>
         <classShapeMoniker Id="32b80f29-b3c3-41b8-bf07-f449958c3a36" />
@@ -34,7 +34,7 @@
         <elementListCompartment Id="20e56a78-be00-44c3-a1d1-dc153fbc9dee" absoluteBounds="3.8899999999999997, 4.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.1875 : 3.875); (4.1875 : 3.04984781901042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.1875 : 3.875); (4.1875 : 3.04984781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/HRDataModelDataContext/LOCATION/LOCATION_DEPARTMENT" />
       <nodes>
         <classShapeMoniker Id="e2138795-0085-4264-a8d4-6e52e93b2993" />
