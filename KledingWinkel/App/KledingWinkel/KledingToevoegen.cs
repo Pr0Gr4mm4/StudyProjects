@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KledingWinkelLib.KledingTypes.Algemeen;
 using KledingWinkelLib.KledingTypes.Jas;
+using System.IO;
 
 namespace KledingWinkelApp
 {
@@ -91,6 +92,17 @@ namespace KledingWinkelApp
         private void cboxSizeTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            string p = "";
+            if(ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                p = Path.Combine(ofd.InitialDirectory, ofd.FileName);
+            }
+            txtImageUrl.Text = p;
         }
 
     }

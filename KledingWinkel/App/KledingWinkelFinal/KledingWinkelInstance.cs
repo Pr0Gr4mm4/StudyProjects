@@ -21,6 +21,9 @@ namespace KledingWinkelFinal
         internal static JasList jasList= new JasList();
         internal static DBHandler databaseHandler = new DBHandler(@"Server=localhost\SYNSERNET;Database=KledingWinkel;User ID=KledingWinkelAppl; Password=kledingwinkel");
 
+        internal static List<int> ActiveMdiChildTree = new List<int>();
+        internal static int ActiveMdiChildID = 0;
+
         /// <summary>
         /// Generates a new product ID by calculating the amount of existing products and returning that number + 1.
         /// </summary>

@@ -76,9 +76,9 @@
             // 
             // btnTestSqlConnection
             // 
-            this.btnTestSqlConnection.Location = new System.Drawing.Point(383, 94);
+            this.btnTestSqlConnection.Location = new System.Drawing.Point(161, 28);
             this.btnTestSqlConnection.Name = "btnTestSqlConnection";
-            this.btnTestSqlConnection.Size = new System.Drawing.Size(208, 155);
+            this.btnTestSqlConnection.Size = new System.Drawing.Size(141, 118);
             this.btnTestSqlConnection.TabIndex = 2;
             this.btnTestSqlConnection.Text = "Test sql connection";
             this.btnTestSqlConnection.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@
             // 
             // txtUserOutPutTest
             // 
-            this.txtUserOutPutTest.Location = new System.Drawing.Point(154, 211);
+            this.txtUserOutPutTest.Location = new System.Drawing.Point(12, 244);
             this.txtUserOutPutTest.Multiline = true;
             this.txtUserOutPutTest.Name = "txtUserOutPutTest";
             this.txtUserOutPutTest.Size = new System.Drawing.Size(212, 160);
@@ -94,7 +94,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(243, 71);
+            this.btnLogin.Location = new System.Drawing.Point(134, 159);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -104,14 +104,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 116);
+            this.textBox1.Location = new System.Drawing.Point(124, 188);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 142);
+            this.textBox2.Location = new System.Drawing.Point(124, 214);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;

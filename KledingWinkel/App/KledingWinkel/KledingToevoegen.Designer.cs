@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtImageUrl = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtTshirtText = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAddKleding = new System.Windows.Forms.Button();
             this.cBoxJasMerken = new System.Windows.Forms.ComboBox();
@@ -41,15 +45,13 @@
             this.txtPrijs = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTshirtText = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtImageUrl = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtImageUrl);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtTshirtText);
@@ -72,6 +74,38 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Beschrijf het toe te voegen kledingstuk";
+            // 
+            // txtImageUrl
+            // 
+            this.txtImageUrl.Location = new System.Drawing.Point(111, 110);
+            this.txtImageUrl.Name = "txtImageUrl";
+            this.txtImageUrl.Size = new System.Drawing.Size(121, 20);
+            this.txtImageUrl.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(17, 113);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Image url :";
+            // 
+            // txtTshirtText
+            // 
+            this.txtTshirtText.Location = new System.Drawing.Point(111, 84);
+            this.txtTshirtText.Name = "txtTshirtText";
+            this.txtTshirtText.Size = new System.Drawing.Size(121, 20);
+            this.txtTshirtText.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Text (Tshirt only):";
             // 
             // btnCancel
             // 
@@ -180,37 +214,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Size :";
             // 
-            // txtTshirtText
+            // button1
             // 
-            this.txtTshirtText.Location = new System.Drawing.Point(111, 84);
-            this.txtTshirtText.Name = "txtTshirtText";
-            this.txtTshirtText.Size = new System.Drawing.Size(121, 20);
-            this.txtTshirtText.TabIndex = 17;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 87);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Text (Tshirt only):";
-            // 
-            // txtImageUrl
-            // 
-            this.txtImageUrl.Location = new System.Drawing.Point(111, 110);
-            this.txtImageUrl.Name = "txtImageUrl";
-            this.txtImageUrl.Size = new System.Drawing.Size(121, 20);
-            this.txtImageUrl.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 113);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Image url :";
+            this.button1.Location = new System.Drawing.Point(239, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(10, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // KledingToevoegen
             // 
@@ -246,5 +258,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTshirtText;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

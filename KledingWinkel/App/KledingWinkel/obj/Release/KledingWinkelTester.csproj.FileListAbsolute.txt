@@ -13,3 +13,12 @@ C:\Users\Admin\Desktop\DMP Joint Venture\Source\Syntax Systems\KledingWinkel\Kle
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\bin\Release\KledingWinkel.exe.config
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkel.exe
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkel.pdb
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\bin\Release\KledingWinkel.exe
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\bin\Release\KledingWinkel.pdb
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\bin\Release\KledingWinkelLib.dll
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\bin\Release\KledingWinkelLib.pdb
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkelTester.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkelApp.Form1.resources
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkelApp.KledingToevoegen.resources
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkelApp.Properties.Resources.resources
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkel\obj\Release\KledingWinkelTester.csproj.GenerateResource.Cache

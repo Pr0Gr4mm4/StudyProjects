@@ -16,7 +16,6 @@ C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\Kledi
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.pdb
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\bin\Release\KledingWinkelFinal.exe
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\bin\Release\KledingWinkelFinal.pdb
-C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\bin\Release\KledingWinkelLib.pdb
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.KledingWinkelMainForm.resources
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.ObjectManipulationForm.resources
@@ -24,3 +23,4 @@ C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\Kledi
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.Properties.Resources.resources
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.ucClients.resources
 C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\obj\Release\KledingWinkelFinal.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Studie\KledingWinkel\KledingWinkelFinal\bin\Release\KledingWinkelLib.pdb

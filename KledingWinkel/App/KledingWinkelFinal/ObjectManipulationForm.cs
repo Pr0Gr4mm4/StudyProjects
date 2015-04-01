@@ -25,7 +25,7 @@ namespace KledingWinkelFinal
                 switch (sysid)
                 {
                     case 1: // clients
-                        ucClients ucclients = new ucClients();
+                        ucClients ucclients = new ucClients(false);
                         ucclients.Parent = tabClientManipulation;
                         InitializeManipulationFormTitle(crudcmd);
                         ucclients.Show();

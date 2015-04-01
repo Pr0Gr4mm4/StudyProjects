@@ -33,7 +33,7 @@ namespace KledingWinkelApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            KledingWinkelLib.Objects.Customer c = new KledingWinkelLib.Objects.Customer("voornaam", "achternaam", new KledingWinkelLib.Objects.Shipping("adres", "stad", "land", "postcode"));
+            KledingWinkelLib.Objects.Customer c = new KledingWinkelLib.Objects.Customer("voornaam", "achternaam", new KledingWinkelLib.Objects.Shipping("adres",33, "stad", "land", "postcode"));
             txtUserOutPutTest.Text = c.Shipping.ToString();
         }
 
@@ -47,8 +47,26 @@ namespace KledingWinkelApp
             KledingWinkelLib.DBHandler handler = new KledingWinkelLib.DBHandler(@"Server=localhost\SYNSERNET;Database=KledingWinkel;User ID=KledingWinkelAppl; Password=kledingwinkel");
             try
             {
-                handler.SendMessage(1, new KledingWinkelLib.Products.Tshirt("hello world",1,"NULL",22.34m, KledingWinkelLib.KledingTypes.Algemeen.KledingSize.S, 
-                    KledingWinkelLib.KledingTypes.Algemeen.KledingType.TSHIRT, KledingWinkelLib.KledingTypes.Algemeen.Merk.A, 5,true ));
+                // WIP
+                KledingWinkelLib.OrderManager.Order orderTest = new KledingWinkelLib.OrderManager.Order(1);
+                orderTest.AddProductToOrder(new KledingWinkelLib.Products.Tshirt("hello world", 1, "NULL", 12.95m, KledingWinkelLib.KledingTypes.Algemeen.KledingSize.S,
+                    KledingWinkelLib.KledingTypes.Algemeen.KledingType.TSHIRT, KledingWinkelLib.KledingTypes.Algemeen.Merk.A, 5, true), 2);
+                orderTest.AddProductToOrder(new KledingWinkelLib.Products.Jas(KledingWinkelLib.KledingTypes.Jas.JasType.Herfst,
+                    KledingWinkelLib.KledingTypes.Algemeen.Merk.A, 2, "", 24.95m, KledingWinkelLib.KledingTypes.Algemeen.KledingSize.M,
+                    KledingWinkelLib.KledingTypes.Algemeen.KledingType.JAS, 25, true),2);
+                
+                handler.SqlInsert("CustomerOrder",orderTest);
+
+
+
+                // WORKS
+                //handler.SqlInsert("KledingStuk", new KledingWinkelLib.Products.Jas(KledingWinkelLib.KledingTypes.Jas.JasType.Herfst, 
+                //    KledingWinkelLib.KledingTypes.Algemeen.Merk.E, 22, "", 55.55m, KledingWinkelLib.KledingTypes.Algemeen.KledingSize.XXL, 
+                //    KledingWinkelLib.KledingTypes.Algemeen.KledingType.JAS, 25, true));
+
+                // WORKS
+                //handler.SqlInsert("KledingStuk", new KledingWinkelLib.Products.Tshirt("hello world",1,"NULL",22.34m, KledingWinkelLib.KledingTypes.Algemeen.KledingSize.S, 
+                //    KledingWinkelLib.KledingTypes.Algemeen.KledingType.TSHIRT, KledingWinkelLib.KledingTypes.Algemeen.Merk.A, 5,true ));
             }
             catch(Exception ex)
             {

@@ -33,7 +33,7 @@ namespace KledingWinkelLib.Products
                 dataDict.Add("ImageUrl", this.imageUrl);
                 dataDict.Add("Size", this.size.ToString());
                 dataDict.Add("Merk", this.merk.ToString());
-                dataDict.Add("JasType", "NULL");
+                //dataDict.Add("JasType", "NULL");
                 dataDict.Add("IsForSale",this.IsForSale.ToString());
 
                 return dataDict;
@@ -60,7 +60,7 @@ namespace KledingWinkelLib.Products
             {
                 Dictionary<string, string> dataDict = new Dictionary<string, string>();
                 dataDict.Add("KledingStukID", this.id.ToString());
-                dataDict.Add("Text", null);
+                //dataDict.Add("Text", null);
                 dataDict.Add("Price", this.price.ToString());
                 dataDict.Add("Amount", amount.ToString());
                 dataDict.Add("ImageUrl", this.imageUrl);
@@ -73,9 +73,9 @@ namespace KledingWinkelLib.Products
             }
         }
     }
-
     public class KledingStuk
     {
+        #region Base values
         public int id { get; set; }
         public string imageUrl { get; set; }
         public decimal price { get; set; }
@@ -84,6 +84,7 @@ namespace KledingWinkelLib.Products
         public KledingWinkelLib.KledingTypes.Algemeen.Merk merk { get; set; }
         public int amount { get; set; }
         public bool IsForSale { get; set; }
+        #endregion
 
         /// <summary>
         /// 

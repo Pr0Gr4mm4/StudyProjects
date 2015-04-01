@@ -12,9 +12,16 @@ namespace KledingWinkelLib.OrderManager
         public int orderID { get; set; }
         public DateTime orderDate { get; set; }
         public int CustomerID { get; private set; }
+
+        /// <summary>
+        /// Creates a new order for the customer with the given ID.
+        /// </summary>
+        /// <param name="customerid">The customer ID</param>
         public Order(int customerid)
         {
             CustomerID = customerid;
+            orderedTshirts = new Dictionary<Tshirt, int>();
+            orderedJassen = new Dictionary<Jas, int>();
         }
 
         /// <summary>
@@ -54,6 +61,11 @@ namespace KledingWinkelLib.OrderManager
             }
         }
 
+        // BUG: GetData Overwrites the ids of the given list. 
+
+        /// <summary>
+        /// Gets all the data in relation the the selected Order Object in dictionary string format.
+        /// </summary>
         public Dictionary<string,string> GetData
         {
             get
@@ -78,22 +90,30 @@ namespace KledingWinkelLib.OrderManager
             }
         }
 
-
-
-        // TODO
-        public bool AddProductToOrder(int id, int amount)
+        /// <summary>
+        /// Adds a product of the shop to the order with the given amount
+        /// </summary>
+        /// <param name="o">The object to add (either Tshirt or Jas(coat))</param>
+        /// <param name="amount">The amount of the product to be ordered</param>
+        /// <returns>Whether successfull or not</returns>
+        public bool AddProductToOrder(Object o, int amount)
         {
             bool flag = false;
-
-
-
-
+            if(o.GetType() == typeof(Tshirt))
+            {
+                orderedTshirts.Add((Tshirt)o, amount);
+                flag = true;
+            }
+            else if (o.GetType() == typeof(Jas))
+            {
+                orderedJassen.Add((Jas)o, amount);
+                flag = true;
+            }
+            else
+            {
+                flag = false;
+            }
             return flag;
         }
-
-
-        
-
-
     }
 }

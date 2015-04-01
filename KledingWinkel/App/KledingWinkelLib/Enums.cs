@@ -16,7 +16,7 @@ namespace KledingWinkelLib.KledingTypes.Algemeen
         XL,
         XXL
     }
-    public enum KledingType
+    public enum KledingType /* OBSOLETE */
     {
         TSHIRT=0,
         JAS

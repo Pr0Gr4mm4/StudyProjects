@@ -85,12 +85,14 @@
             this.cascadeCloseToolStripMenuItem.Name = "cascadeCloseToolStripMenuItem";
             this.cascadeCloseToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.cascadeCloseToolStripMenuItem.Text = "&Cascade Close Windows";
+            this.cascadeCloseToolStripMenuItem.Click += new System.EventHandler(this.cascadeCloseToolStripMenuItem_Click);
             // 
             // closeAllWindowsToolStripMenuItem
             // 
             this.closeAllWindowsToolStripMenuItem.Name = "closeAllWindowsToolStripMenuItem";
             this.closeAllWindowsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.closeAllWindowsToolStripMenuItem.Text = "Close &All Windows";
+            this.closeAllWindowsToolStripMenuItem.Click += new System.EventHandler(this.closeAllWindowsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
