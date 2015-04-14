@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.Properties.Resources.resources
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\libraryTester.exe.config
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\libraryTester.exe
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\libraryTester.pdb
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\KentekenRegistratieLib.dll
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\DBHandler.dll
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\KentekenRegistratieLib.pdb
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\bin\Debug\DBHandler.pdb
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.exe
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.pdb
+C:\Users\Admin\Desktop\Studie\KentekenRegistratieLib\libraryTester\obj\Debug\libraryTester.Form1.resources
