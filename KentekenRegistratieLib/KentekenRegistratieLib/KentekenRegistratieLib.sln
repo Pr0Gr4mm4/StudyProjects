@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KentekenRegistratieLib", "KentekenRegistratieLib\KentekenRegistratieLib.csproj", "{74524B3E-AD90-4DB5-8ED1-62D82419356F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBHandler", "..\DBHandler\DBHandler\DBHandler.csproj", "{19CDF5A1-46E4-4E47-A485-AF7A717E7713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libraryTester", "libraryTester\libraryTester.csproj", "{5262746F-C4AD-477D-A908-127597A5BD43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74524B3E-AD90-4DB5-8ED1-62D82419356F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74524B3E-AD90-4DB5-8ED1-62D82419356F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74524B3E-AD90-4DB5-8ED1-62D82419356F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74524B3E-AD90-4DB5-8ED1-62D82419356F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CDF5A1-46E4-4E47-A485-AF7A717E7713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CDF5A1-46E4-4E47-A485-AF7A717E7713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CDF5A1-46E4-4E47-A485-AF7A717E7713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CDF5A1-46E4-4E47-A485-AF7A717E7713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5262746F-C4AD-477D-A908-127597A5BD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5262746F-C4AD-477D-A908-127597A5BD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5262746F-C4AD-477D-A908-127597A5BD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5262746F-C4AD-477D-A908-127597A5BD43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
