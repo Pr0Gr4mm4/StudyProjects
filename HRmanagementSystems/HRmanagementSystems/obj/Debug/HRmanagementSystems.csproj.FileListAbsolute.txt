@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\bin\HRmanagementSystems.dll.config
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\bin\HRmanagementSystems.dll
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\bin\HRmanagementSystems.pdb
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\obj\Debug\HRmanagementSystems.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\obj\Debug\HRmanagementSystems.dll
+C:\Users\Admin\Desktop\Studie\HRmanagementSystems\HRmanagementSystems\obj\Debug\HRmanagementSystems.pdb

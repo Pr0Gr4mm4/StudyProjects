@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="HRmanagementSystems.MainPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="mainStyle.css" rel="stylesheet" />
+    <title>HR Management Systems</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id ="logo" class="topContainer">LOGO</div><div id="bedrijfsNaam" class="topContainer">HR Systems Management</div> <div id="datumNaam" class="topContainer">Datum en naam</div>
+            <div id="mainMenu">MAIN MENU</div><div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+                </div>
+        <div id="footer">FOOTER</div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿body {
+}
+#logo{
+    width:200px;
+}
+#bedrijfsNaam{
+    margin-left:200px;
+    top: 15px;
+    left: 10px;
+    width: 298px;
+    text-align:center;
+}
+#datumNaam{
+    margin-left:500px;
+}
+.topContainer{
+    position:fixed;
+    height:150px;
+    background-color:blue;
+}
+
+#mainMenu{
+    margin-top:150px;
+    height:400px;
+    width:130px;
+    background-color:yellow;
+}
+#content{
+    position:absolute;
+    margin-left:130px;
+    top: 166px;
+    left: 13px;
+    height: 400px;
+    width: 474px;
+}
+#footer{
+    background-color:black;
+    text-align:center;
+    color:white;
+}
