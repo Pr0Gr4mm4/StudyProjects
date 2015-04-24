@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace HRmanagementSystems
 {
@@ -13,7 +14,10 @@ namespace HRmanagementSystems
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(IsPostBack)
+            {
 
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -28,11 +32,17 @@ namespace HRmanagementSystems
             try
             {
                 sqlConn.Open();
-                int rows = (int)sqlComm.ExecuteScalar();
+                SqlDataReader sqlReader = sqlComm.ExecuteReader();
 
-                if(rows == 1)
+                if (sqlReader.HasRows)
                 {
-                    Response.Redirect("homepage.aspx");
+                    while (sqlReader.Read())
+                    {
+                        UserInfo user = new UserInfo((string)sqlReader["FIRST_NAME"], (string)sqlReader["LAST_NAME"], (int)sqlReader["DEPARTMENT_ID"], (DateTime)sqlReader["HIRE_DATE"]);
+
+                        Session.Add("userInfo", user);
+                        Response.Redirect("homepage.aspx", false);
+                    }
                 }
             }
             catch(Exception ex)

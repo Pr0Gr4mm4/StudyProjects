@@ -10,15 +10,24 @@
 namespace HRmanagementSystems {
     
     
-    public partial class homepage {
+    public partial class ucDepartmentEmployees {
         
         /// <summary>
-        /// ucDepartmentEmployees control.
+        /// ddlDepartmentEmployees control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::HRmanagementSystems.ucDepartmentEmployees ucDepartmentEmployees;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDepartmentEmployees;
+        
+        /// <summary>
+        /// dvDepartmentEmployee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView dvDepartmentEmployee;
     }
 }

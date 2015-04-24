@@ -1,26 +1,35 @@
 ﻿body {
+    width: 600px;
 }
 #logo{
     width:200px;
 }
 #bedrijfsNaam{
-    margin-left:200px;
+    
     top: 15px;
     left: 10px;
     width: 298px;
     text-align:center;
 }
 #datumNaam{
-    margin-left:500px;
+    
 }
+
+#topRow{
+    height:150px;
+    width:600px;
+    background-color:blue;
+}
+
 .topContainer{
-    position:fixed;
+    float:left;
+    display:inline;
     height:150px;
     background-color:blue;
 }
 
 #mainMenu{
-    margin-top:150px;
+    position:absolute;
     height:400px;
     width:130px;
     background-color:yellow;
@@ -28,12 +37,17 @@
 #content{
     position:absolute;
     margin-left:130px;
-    top: 166px;
-    left: 13px;
     height: 400px;
-    width: 474px;
+    width: 470px;
+    background-color:lightyellow;
 }
+
+#pageContent{
+}
+
 #footer{
+    margin-top:400px;
+    width:600px;
     background-color:black;
     text-align:center;
     color:white;

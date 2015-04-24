@@ -1,0 +1,23 @@
+USE [HR]
+GO
+/****** Object:  StoredProcedure [dbo].[spLogin]    Script Date: 24-4-2015 15:39:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[spLogin]
+@loginName varchar(25),
+@password varchar(1000)
+AS
+BEGIN
+
+SELECT * FROM EMPLOYEES e 
+WHERE e.EMAIL = @loginName AND e.PASSWORD = @password
+
+
+END
